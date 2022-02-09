@@ -1,0 +1,57 @@
+<div class="container">
+  <mat-card class="card">
+    <mat-card-content>
+      <mat-card-title translate>Hi</mat-card-title>
+      <mat-card-subtitle>
+
+        <form class="row form" [formGroup]='formNumber!' (submit)="showAnswer()">
+
+          <mat-form-field class="col input"
+          appearance="fill">
+            <mat-label>Número</mat-label>
+            <input matInput type="number" formControlName="number">
+          </mat-form-field>
+
+          <div class="col button">
+            <button mat-raised-button
+            [disabled]="formNumber?.invalid"
+            type="submit">
+              <mat-icon>auto_fix_high</mat-icon>
+              <span translate>Muestra multiplos</span>
+            </button>
+
+          </div>
+
+        </form>
+
+        <div class="response">
+
+          <app-loader [isLoading]="isLoading" [size]="1.5"></app-loader>
+          <p [hidden]="isLoading || !response"
+          [ngClass]="{'color3':class==3,'color5':class==5,'color7':class==7}"
+          >{{response}}</p>
+
+          <p [hidden]="!upload">{{upload}}</p>
+
+        </div>
+
+
+      </mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<!-- <div class="container">
+  <mat-card>
+    <p>
+      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo"/>
+    </p>
+    <mat-card-content>
+      <mat-card-title translate>Hello world !</mat-card-title>
+      <mat-card-subtitle>
+        <app-loader [isLoading]="isLoading" [size]="1.5"></app-loader>
+        <q [hidden]="isLoading">{{quote}}</q>
+      </mat-card-subtitle>
+    </mat-card-content>
+  </mat-card>
+</div> -->

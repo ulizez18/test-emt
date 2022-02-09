@@ -1,0 +1,49 @@
+.container {
+  text-align: center;
+  padding: 1em;
+  display: flex;
+}
+
+.card{
+  margin:auto;
+  max-width: 400px;
+  width: 100%
+}
+
+.response{
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+p{
+  font-weight: bold;
+}
+
+.color3{
+  color: green
+}
+
+.color5{
+  color: red
+}
+
+.color7{
+  color: blue
+}
+
+.row{
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.col{
+  width: 100%;
+  margin: auto
+}

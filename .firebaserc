@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "test-7d2bb"
+  },
+  "targets": {
+    "test-7d2bb": {
+      "hosting": {
+        "test": [
+          "test-7d2bb"
+        ]
+      }
+    }
+  }
+}
